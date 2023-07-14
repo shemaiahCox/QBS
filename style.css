@@ -1,0 +1,157 @@
+/* Global  */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: #171717;
+}
+
+/**********************************************
+    > 320px
+***********************************************/
+
+/* Form body */
+
+form {
+    width: 550px;
+    height: 300px;
+    /* background-color: #74ca03; */
+    background-color: #5391BF;
+    border: 5px solid #3c3c3b;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 20px 20px 0px 20px;
+}
+
+/* Form fields */
+
+section.form-section-wrapper {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+section.form-section-title-wrapper {
+    align-self: start;
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 50px;
+    margin-right: 25px;
+}
+
+input {
+    width: 219px;
+    height: 15px;
+    border: none;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+input:invalid:placeholder-shown {
+    border: none;
+}
+
+input:invalid {
+    border: 5px solid #fb0063;
+}
+
+/* input:required:valid {
+    border: 5px solid #91ff01;
+} */
+
+::placeholder {
+    color: #c4c4c4;
+}
+
+/* Submit button */
+
+section.submit {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+button {
+    padding: 4px 20px;
+    border-radius: 5px;
+    appearance: none;
+    background-color: #F6B033;
+    cursor: pointer;
+}
+
+/* This is the style of our error messages */
+
+.firstname-error {
+    width: 100%;
+    padding: 0;
+    font-size: 80%;
+    color: white;
+    background-color: #fb0063;
+    box-sizing: border-box;
+}
+  
+.error.active {
+    padding: 0.3em;
+    /* margin-bottom: 15px; */
+}
+
+#result-div {
+padding: 10px;
+background-color: #D3D3D3;
+color: white;
+font-size: 1rem;
+text-align: center;
+display: none;
+}
+  
+ /***********************************************
+    < 320px
+ ************************************************/
+
+ @media only screen and (max-width: 320px) {
+    form {
+        width: 200px;
+        height: 300px;
+        background-color: #74ca03;
+        border: 5px solid #3c3c3b;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 20px 0px 20px;
+    }
+
+    input {
+        width: 180px;
+        height: 25px;
+        border: none;
+        padding: 5px 10px;
+    }
+
+    label {
+        display: inline-block;
+        width: 50px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        padding: 10px 30px;
+        border-radius: 5px;
+        appearance: none;
+        background-color: #fb0063;
+        cursor: pointer;
+    }
+ }
